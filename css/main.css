@@ -10,7 +10,6 @@ body {
   margin-bottom: 0;
   font-family: "Inria Sans", sans-serif;
   background-color: #1E3799;
-  border: 2px solid #1E3799;
 }
 
 header {
@@ -53,7 +52,7 @@ header .menu ul li a:hover {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  gap: 15em;
 }
 .content #accueil {
   display: flex;
@@ -114,6 +113,19 @@ header .menu ul li a:hover {
   font-size: 2em;
   padding-left: 0.2em;
 }
+.content #skills .fleche {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content #skills .fleche p {
+  font-size: 1.6em;
+}
+.content #skills .fleche svg {
+  width: 2em;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
 .content #skills .skills-list {
   display: flex;
   flex-direction: column;
@@ -158,4 +170,22 @@ footer .social-medias ul li a img {
 }
 footer .social-medias ul li a .Linkedin {
   width: 7.5em;
+}
+
+@-webkit-keyframes moveArrow {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes moveArrow {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(50px);
+  }
 }/*# sourceMappingURL=main.css.map */
