@@ -10,6 +10,7 @@ header {
     display: flex;
     flex-direction: row;
     flex: 1;
+    padding-right: 1rem;
 
     .logo {
         display: flex;
@@ -18,24 +19,75 @@ header {
         padding-left: 1em;
     }
 
-    ul {
+    .menu {
+        flex: 1.4;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 1.313rem;
+            list-style-type: none;
+            color: white;
+            align-items: center;
+
+            .menu-white-bar {
+                width: 2px;
+                background-color: white;
+                height: 4em;
+            }
+            
+            li {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 2.5em;
+    
+                    &:hover {
+                        color: #6A89CC; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content {
+    #accueil {
         display: flex;
         flex-direction: row;
-        gap: 1.313rem;
-        flex: 1.4;
-        list-style-type: none;
-        color: white;
-        align-items: center;
+        .accueil-left-content {
+            flex: 1;
+            border: 2px solid white;
 
-        
-        li {
-            a {
-                text-decoration: none;
-                color: white;
-                font-size: 2.5rem;
+            .image-fond {
+                margin: 0;
+            }
+            .ma-tete {
+                border: 2px solid #0C2461;
+                border-bottom-color: white;
+                border-right-color: white;
+                width: 700px;
+                border-bottom-right-radius: 70%;
+            }
+        }
 
-                &:hover {
-                    color: #6A89CC; 
+        .accueil-right-content{
+            flex: 1;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            h1 {
+                font-size: 5em;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 1.9em;
+                strong {
+                    color: #6A89CC;
                 }
             }
         }

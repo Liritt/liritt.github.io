@@ -10,6 +10,7 @@ header {
   display: flex;
   flex-direction: row;
   flex: 1;
+  padding-right: 1rem;
 }
 header .logo {
   display: flex;
@@ -17,20 +18,64 @@ header .logo {
   align-items: center;
   padding-left: 1em;
 }
-header ul {
+header .menu {
+  flex: 1.4;
+}
+header .menu ul {
   display: flex;
   flex-direction: row;
   gap: 1.313rem;
-  flex: 1.4;
   list-style-type: none;
   color: white;
   align-items: center;
 }
-header ul li a {
+header .menu ul .menu-white-bar {
+  width: 2px;
+  background-color: white;
+  height: 4em;
+}
+header .menu ul li a {
   text-decoration: none;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
-header ul li a:hover {
+header .menu ul li a:hover {
+  color: #6A89CC;
+}
+
+.content #accueil {
+  display: flex;
+  flex-direction: row;
+}
+.content #accueil .accueil-left-content {
+  flex: 1;
+  border: 2px solid white;
+}
+.content #accueil .accueil-left-content .image-fond {
+  margin: 0;
+}
+.content #accueil .accueil-left-content .ma-tete {
+  border: 2px solid #0C2461;
+  border-bottom-color: white;
+  border-right-color: white;
+  width: 700px;
+  border-bottom-right-radius: 70%;
+}
+.content #accueil .accueil-right-content {
+  flex: 1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.content #accueil .accueil-right-content h1 {
+  font-size: 5em;
+}
+.content #accueil .accueil-right-content h2 {
+  text-align: center;
+  font-size: 1.9em;
+}
+.content #accueil .accueil-right-content h2 strong {
   color: #6A89CC;
 }/*# sourceMappingURL=main.css.map */
