@@ -184,7 +184,7 @@ footer .social-medias ul li a .Linkedin {
     transform: translateY(-10px);
   }
   to {
-    transform: translateY(50px);
+    transform: translateY(55px);
   }
 }
 @keyframes moveArrow {
@@ -192,6 +192,6 @@ footer .social-medias ul li a .Linkedin {
     transform: translateY(-10px);
   }
   to {
-    transform: translateY(50px);
+    transform: translateY(55px);
   }
 }/*# sourceMappingURL=main.css.map */
