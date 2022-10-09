@@ -2,7 +2,6 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Inria Sans", sans-serif;
-  background-color: #1E3799;
 }
 
 header {
@@ -43,13 +42,15 @@ header .menu ul li a:hover {
   color: #6A89CC;
 }
 
+.content {
+  background: linear-gradient(to top, #1E3799 98%, #0C2461);
+}
 .content #accueil {
   display: flex;
   flex-direction: row;
 }
 .content #accueil .accueil-left-content {
   flex: 1;
-  border: 2px solid white;
 }
 .content #accueil .accueil-left-content .image-fond {
   margin: 0;
