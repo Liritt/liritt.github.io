@@ -6,8 +6,7 @@ html {
 
 body {
   height: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   font-family: "Inria Sans", sans-serif;
   background-color: #1E3799;
 }
@@ -172,6 +171,14 @@ footer .social-medias ul li a .Linkedin {
   width: 7.5em;
 }
 
+@media (max-width: 1300px) {
+  html {
+    margin: 0;
+  }
+  body {
+    margin: 0;
+  }
+}
 @-webkit-keyframes moveArrow {
   from {
     transform: translateY(-10px);
@@ -180,7 +187,6 @@ footer .social-medias ul li a .Linkedin {
     transform: translateY(50px);
   }
 }
-
 @keyframes moveArrow {
   from {
     transform: translateY(-10px);
