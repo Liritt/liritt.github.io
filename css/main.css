@@ -1,8 +1,10 @@
 body {
   height: 100%;
-  margin: 0;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-top: 0;
   font-family: "Inria Sans", sans-serif;
-  background-color: #1E3799;
+  background-color: #0f1f5f;
 }
 
 header {
@@ -37,7 +39,7 @@ header .menu ul .menu-white-bar {
 header .menu ul li a {
   text-decoration: none;
   color: white;
-  font-size: 2.5em;
+  font-size: 1.3em;
 }
 header .menu ul li a:hover {
   color: #6A89CC;
@@ -47,6 +49,7 @@ header .menu ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 5em;
+  background-color: #1E3799;
 }
 .content #accueil {
   display: flex;
@@ -62,24 +65,25 @@ header .menu ul li a:hover {
   border: 2px solid #0C2461;
   border-bottom-color: white;
   border-right-color: white;
-  width: 700px;
+  width: 500px;
   border-bottom-right-radius: 70%;
 }
 .content #accueil .accueil-right-content {
-  flex: 1;
+  flex: 1.5;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  padding-right: 1em;
 }
 .content #accueil .accueil-right-content h1 {
-  font-size: 8em;
+  font-size: 4em;
   text-align: center;
 }
 .content #accueil .accueil-right-content h2 {
   text-align: center;
-  font-size: 1.9em;
+  font-size: 1.5em;
 }
 .content #accueil .accueil-right-content h2 strong {
   color: #6A89CC;
@@ -88,11 +92,22 @@ header .menu ul li a:hover {
   color: white;
 }
 .content #WAI h1 {
-  font-size: 4em;
+  font-size: 2em;
+  padding-left: 0.2em;
 }
 .content #WAI .text {
   text-align: center;
   padding-left: 25%;
   padding-right: 25%;
-  font-size: 2.5em;
+  font-size: 1.5em;
+}
+.content #skills {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1;
+}
+.content #skills h1 {
+  font-size: 2em;
+  padding-left: 0.2em;
 }/*# sourceMappingURL=main.css.map */

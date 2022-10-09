@@ -1,8 +1,11 @@
 body {
     height: 100%;
-    margin: 0;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 0;
     font-family: 'Inria Sans', sans-serif;
-    background-color: #1E3799;
+    background-color: #0f1f5f;
+
 }
 
 header {
@@ -40,7 +43,7 @@ header {
                 a {
                     text-decoration: none;
                     color: white;
-                    font-size: 2.5em;
+                    font-size: 1.3em;
     
                     &:hover {
                         color: #6A89CC; 
@@ -55,6 +58,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 5em;
+    background-color: #1E3799;
 
     #accueil {
         display: flex;
@@ -69,27 +73,28 @@ header {
                 border: 2px solid #0C2461;
                 border-bottom-color: white;
                 border-right-color: white;
-                width: 700px;
+                width: 500px;
                 border-bottom-right-radius: 70%;
             }
         }
 
         .accueil-right-content{
-            flex: 1;
+            flex: 1.5;
             color: white;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
             flex-direction: column;
+            padding-right: 1em;
 
             h1 {
-                font-size: 8em;
+                font-size: 4em;
                 text-align: center;
             }
 
             h2 {
                 text-align: center;
-                font-size: 1.9em;
+                font-size: 1.5em;
                 strong {
                     color: #6A89CC;
                 }
@@ -101,14 +106,27 @@ header {
         color: white;
 
         h1 {
-            font-size: 4em;
+            font-size: 2em;
+            padding-left: 0.2em;
         }
         .text {
             text-align: center;
             padding-left: 25%;
             padding-right: 25%;
-            font-size: 2.5em;
+            font-size: 1.5em;
         }
+    }
+
+    #skills {
+        color: white;
+        display: flex;
+
+        h1 {
+            font-size: 2em;
+            padding-left: 0.2em;
+        }
+        flex-wrap: wrap;
+        flex: 1 1;
     }
 }
 
