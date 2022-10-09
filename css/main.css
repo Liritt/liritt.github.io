@@ -1,10 +1,16 @@
-body {
-  height: 100%;
+html {
   margin-left: 17%;
   margin-right: 17%;
-  margin-top: 0;
-  font-family: "Inria Sans", sans-serif;
   background-color: #0f1f5f;
+}
+
+body {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Inria Sans", sans-serif;
+  background-color: #1E3799;
+  border: 2px solid #1E3799;
 }
 
 header {
@@ -12,7 +18,6 @@ header {
   display: flex;
   flex-direction: row;
   flex: 1;
-  padding-right: 1rem;
 }
 header .logo {
   display: flex;
@@ -49,7 +54,6 @@ header .menu ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 5em;
-  background-color: #1E3799;
 }
 .content #accueil {
   display: flex;
@@ -104,10 +108,54 @@ header .menu ul li a:hover {
 .content #skills {
   color: white;
   display: flex;
-  flex-wrap: wrap;
-  flex: 1 1;
+  flex-direction: column;
 }
 .content #skills h1 {
   font-size: 2em;
   padding-left: 0.2em;
+}
+.content #skills .skills-list {
+  display: flex;
+  flex-direction: column;
+}
+.content #skills .skills-list .first-line-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.content #skills .skills-list .second-line-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+footer > p {
+  color: #6A89CC;
+  flex: 1;
+  margin-left: 1em;
+  font-size: 1.4em;
+}
+footer .social-medias {
+  flex: 1;
+  color: white;
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .social-medias ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+footer .social-medias ul li a img {
+  width: 4em;
+}
+footer .social-medias ul li a .Linkedin {
+  width: 7.5em;
 }/*# sourceMappingURL=main.css.map */
