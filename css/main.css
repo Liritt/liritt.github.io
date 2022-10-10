@@ -73,6 +73,7 @@ header .menu ul li a:hover {
   border-right-color: white;
   width: 500px;
   border-bottom-right-radius: 70%;
+  background-image: url(/img/image-fond-ma-tete.jpg);
 }
 .content #accueil .accueil-right-content {
   flex: 1.5;
