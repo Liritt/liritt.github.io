@@ -152,7 +152,30 @@ header {
             }
         }
 
-        .skills-list {
+        details {
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            padding: .5em .5em 0;
+            cursor: pointer;
+
+            &[open] {
+                padding: .5em;
+    
+                summary {
+                    border-bottom: 1px solid #aaa;
+                    margin-bottom: .5em;
+                }
+            }
+        }
+        
+        summary {
+            font-weight: bold;
+            margin: -.5em -.5em 0;
+            padding: .5em;
+        }
+        
+
+        /*.skills-list {
             display: flex;
             flex-direction: column;
             gap: 10rem;
@@ -174,10 +197,6 @@ header {
                     align-items: center;
                     padding: 2rem;
 
-                    img {
-                        max-width: 100%;
-                        height: auto;
-                    }
                 }
             }
             
@@ -185,15 +204,25 @@ header {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
             }
 
             .second-line-skills {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
+
+                img {
+                    max-width: 80%;
+                    height: auto;
+                }
             }
         }
+        */
     }
 }
 
@@ -213,7 +242,7 @@ footer {
     .social-medias {
         flex: 1;
         color: white;
-        font-size: 1.4em;
+        font-size: 1em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -226,11 +255,11 @@ footer {
             li {
                 a {
                     img {
-                        width: 4em;
+                        width: 3em;
                     }
 
                     .Linkedin {
-                        width: 7.5em;
+                        width: 6em;
                     }
                 }
             }

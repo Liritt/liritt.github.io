@@ -9,7 +9,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Kanit:ital,wght@1,300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="index.js"></script>
+    <style>
+        /* #overlay-html-css, #overlay-php, #overlay-sql, #overlay-python, #overlay-javascript, #overlay-csharp {
+          position: fixed;
+          display: none;
+          width: 60%;
+          height: 60%;
+          top: 25%;
+          left: 15%;
+          right: 0;
+          bottom: 0;
+          background-color: #1E3799;
+          z-index: 2;
+          cursor: pointer;
+          animation: rebond .8s ease-out;
+        }
+        
+        .text-overlay{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          font-size: 1rem;
+          color: white;
+          transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+          z-index: 2;
+        }
+
+        .img {
+            position: absolute;
+            opacity: 0.1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes rebond{
+	0%{opacity:0;transform:scale3d(.3,.3,.3)}
+	20%{opacity:1;transform:scale3d(1.1,1.1,1.1)}
+	40%{transform:scale3d(.9,.9,.9)}
+	60%{transform:scale3d(1.03,1.03,1.03)}
+	80%{transform:scale3d(.97,.97,.97)}
+	100%{transform:scale3d(1,1,1)}
+	}
+
+    */
+        </style>
 </head>
 <body>
     <header>
@@ -87,52 +133,163 @@
                     <path d="M27.1716 152.828C28.7337 154.391 31.2663 154.391 32.8284 152.828L58.2843 127.373C59.8464 125.81 59.8464 123.278 58.2843 121.716C56.7222 120.154 54.1895 120.154 52.6274 121.716L30 144.343L7.37259 121.716C5.81049 120.154 3.27783 120.154 1.71573 121.716C0.153634 123.278 0.153634 125.81 1.71573 127.373L27.1716 152.828ZM26 6.98131e-08L26 150L34 150L34 -6.98131e-08L26 6.98131e-08Z" fill="white"/>
                 </svg>
             </div>
+
+            <div class="skills-list">
+                <details>
+                    <summary>HTML & CSS</summary>
+                    <p>L’HTML et le CSS sont deux langages que j’ai toujours beaucoup utilisés :  
+                        ce sont les premiers langages dans lesquels j’ai codé. Je me suis formé 
+                        sur le site OpenClassroom. Suffisamment à l’aise désormais, j’utilise plutôt 
+                        les documentations officielles lorsque j’ai un problème sur mon code.</p>
+                    <p>Je pense que ce sont les deux langages que je comprends le mieux car ce sont 
+                        ceux que j’utilise depuis mes débuts. Ils m’ont servi à faire des sites très 
+                        simples comme le design d’un site de fast-food ou encore le CSS d’une application 
+                        web servant à générer des quiz (sur commande)</p>
+                </details>
+
+                <details>
+                    <summary>PHP</summary>
+                    <p>Le php est un langage que j’ai appris à l’IUT ces deux dernières années.
+                        On peut noter par exemple l’application web [mettre lien]
+                        que nous avons fait  en fin d’année dernière.</p>
+                    <p>De plus, j’ai appris à utiliser certains logiciels
+                        liés à PHP comme PhpStorm ou Composer notamment.</p>
+                    <p>J’ai aussi appris à utiliser des frameworks :</p>
+                    <ul>
+                        <li>Codeception pour ses tests unitaires</li>
+                        <li>Symfony</li> 
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>SQL</summary>
+                    <p>Je suis à l’aise dans la conception, la gestion et l’implémentation des bases de données. </p>
+                    <p>Tout d’abord, j’ai appris et utilisé SQL et SQLPLUS ainsi que
+                        MySQL. J’ai travaillé sur le logiciel Oracle Database
+                        principalement afin d’écrire du SQL. J’ai aussi utilisé
+                        Access afin de créer des formulaires et gérer mes
+                        enregistrements.
+                    </p>
+                    <p>
+                        Enfin, j’ai eu à faire des projets avec création de MLD puis de MCD 
+                        et MPD avec le logiciel powerAMC afin de convertir tout cela en SQL et manipuler mes résultats. 
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Python</summary>
+                    <p>Python est un langage qu’on nous apprend en 
+                        mathématiques dès le collège. Par conséquent,
+                        c’est un langage que je connais depuis 10 ans.</p>
+                    <p>Toutefois, je l’utilise pleinement depuis le début
+                        de mes études à l’université. Dans le
+                       cadre de mes études, j’ai notamment eu 
+                       à faire un jeu de bataille navale,
+                       [lien au dessus] ainsi que des labyrinthes [lien ici]</p>
+                </details>
+
+                <details>
+                    <summary>C#</summary>
+                    <p>Dès 2019, j’ai suivi la formation Gamecodeur qui m’a permis d’expérimenter le langage C#.</p>
+                    <p>J’approfondis mes connaissances actuellement grâce à mes cours de .net et de C#.</p>
+                    <p>Coming soon...</p>
+                </details>
+
+                <details>
+                    <summary>Javascript</summary>
+                    <p>Ma seule expérience Javascript provient de ce site 
+                        donc disons que je suis au niveau 1 de ce langage.</p>
+                    <p>Des cours de Javascript sont prévus cette année. 
+                        Mon niveau sera nettement plus élevé à mon entrée en stage </p>
+                    <p>Coming soon...</p>
+                </details>
+            </div>
+
+            <!-- 
+            <div id="overlay-html-css" onclick="offHtmlCss()">
+                <div class="text-overlay">
+                    <p>L’HTML et le CSS sont deux langages que j’ai toujours beaucoup utilisés :  
+                        ce sont les premiers langages dans lesquels j’ai codé. Je me suis formé 
+                        sur le site OpenClassroom. Suffisamment à l’aise désormais, j’utilise plutôt 
+                        les documentations officielles lorsque j’ai un problème sur mon code.
+                    </p>
+                    <p>
+                        Je pense que ce sont les deux langages que je comprends le mieux car ce sont 
+                        ceux que j’utilise depuis mes débuts. Ils m’ont servi à faire des sites très 
+                        simples comme le design d’un site de fast-food ou encore le CSS d’une application 
+                        web servant à générer des quiz (sur commande)
+                    </p>
+                </div>
+                <img class="img" src="img/logo-html5-css3.png" alt="logo html css">
+            </div>
+
+            <div id="overlay-php" onclick="offPhp()">
+                <div class="text-overlay">Overlay Text</div>
+                <img class="img" src="img/PHP-logo.svg" alt="logo php">
+            </div>
+
+            <div id="overlay-sql" onclick="offSql()">
+                <div class="text-overlay">Overlay Text</div>
+                <img class="img" src="img/sql-logo.png" alt="logo sql">
+            </div>
+
+            <div id="overlay-python" onclick="offPython()">
+                <div class="text-overlay">Overlay Text</div>
+                <img class="img" src="img/logo-python.ong.png" alt="logo python">
+            </div>
+
+            <div id="overlay-javascript" onclick="offJavascript()">
+                <div class="text-overlay">Overlay Text</div>
+                <img class="img" src="img/JavaScript-logo.png" alt="logo Javascript">
+            </div>
+
+            <div id="overlay-csharp" onclick="offCsharp()">
+                <div class="text-overlay">Overlay Text</div>
+                <img class="img" src="img/c.svg" alt="logo csharp">
+            </div>
                 
             <div class="skills-list">
                 <div class="first-line-skills">
                     <div class="losange">
-                        <div class="rond">
+                        <div class="rond" onclick="onHtmlCss()">
                             <img src="img/logo-html5-css3.png" alt="html css logo">
                         </div>                    
                     </div>
 
                     <div class="losange">
-                        <div class="rond">
+                        <div class="rond" onclick="onPhp()">
                             <img src="img/PHP-logo.svg" alt="php logo">
                         </div>                    
                     </div>
 
                     <div class="losange">
-                        <div class="rond">
+                        <div class="rond" onclick="onSql()">
                             <img src="img/sql-logo.png" alt="sql logo">
                         </div>                    
                     </div>
                 </div>
 
-                <!-- <img src="img/logo-html5-css3.png" alt="Logo html" width="15%" height="15%"> -->
-                <!-- <img src="img/PHP-logo.svg" alt="Logo php" width="15%"> -->
-                <!-- <img src="img/sql-logo.png" alt="Logo sql" width="15%" height="15%"> -->
-
                 <div class="second-line-skills">
                     <div class="losange">
-                        <div class="rond">
+                        <div class="rond" onclick="onPython()">
                             <img src="img/logo-python.ong.png" alt="python logo">
                         </div>                    
                     </div>
 
                     <div class="losange">
-                        <div class="rond">
+                        <div class="rond" onclick="onCsharp()">
                             <img src="img/c.svg" alt="csharp logo">
                         </div>                    
                     </div>
 
                     <div class="losange">
-                        <div class="rond">
+                        <div class="rond" onclick="onJavascript()">
                             <img src="img/JavaScript-logo.png" alt="Javascript logo">
                         </div>                    
                     </div>
                 </div>
             </div>
+        -->
         </section>
     </main>
 
@@ -148,5 +305,55 @@
             </ul>
         </div>
     </footer>
+
+    <!-- <script>
+        function onHtmlCss() {
+            document.getElementById("overlay-html-css").style.display = "block";
+        }
+
+        function offHtmlCss() {
+            document.getElementById("overlay-html-css").style.display = "none";
+        }
+
+        function onPhp() {
+            document.getElementById("overlay-php").style.display = "block";
+        }
+
+        function offPhp() {
+            document.getElementById("overlay-php").style.display = "none";
+        }
+
+        function onSql() {
+            document.getElementById("overlay-sql").style.display = "block";
+        }
+
+        function offSql() {
+            document.getElementById("overlay-sql").style.display = "none";
+        }
+
+        function onPython() {
+            document.getElementById("overlay-python").style.display = "block";
+        }
+
+        function offPython() {
+            document.getElementById("overlay-python").style.display = "none";
+        }
+
+        function onCsharp() {
+            document.getElementById("overlay-csharp").style.display = "block";
+        }
+
+        function offCsharp() {
+            document.getElementById("overlay-csharp").style.display = "none";
+        }
+
+        function onJavascript() {
+            document.getElementById("overlay-javascript").style.display = "block";
+        }
+
+        function offJavascript() {
+            document.getElementById("overlay-javascript").style.display = "none";
+        }
+    </script> -->
 </body>
 </html>
