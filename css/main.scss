@@ -242,6 +242,10 @@ header {
             display: flex;
             flex-direction: column;
             gap: 2rem;
+
+            a {
+                color: #6A89CC;
+            }
         }
     }
 }

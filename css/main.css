@@ -213,6 +213,9 @@ header .menu ul li a:hover {
   flex-direction: column;
   gap: 2rem;
 }
+.content #contact ul a {
+  color: #6A89CC;
+}
 
 footer {
   display: flex;
