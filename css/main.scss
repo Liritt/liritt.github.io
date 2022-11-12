@@ -177,56 +177,6 @@ header {
             margin: -.5em -.5em 0;
             padding: .5em;
         }
-        
-
-        /*.skills-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10rem;
-
-            .losange {
-                height: 10rem;
-                width: 10rem;
-                background: #4A69BD;
-                transform: rotate(45deg);
-
-                .rond {
-                    width: 10rem;
-                    height: 10rem;
-                    border-radius: 50%;
-                    background: #1E3799;
-                    transform: rotate(-45deg);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 2rem;
-
-                }
-            }
-            
-            .first-line-skills {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-
-                img {
-                    max-width: 100%;
-                    height: auto;
-                }
-            }
-
-            .second-line-skills {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-
-                img {
-                    max-width: 80%;
-                    height: auto;
-                }
-            }
-        }
-        */
     }
 
     #contact {
@@ -291,7 +241,7 @@ footer {
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
     html {
         margin:0;
     }
