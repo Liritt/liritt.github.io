@@ -6,6 +6,7 @@ html {
   margin-left: 17%;
   margin-right: 17%;
   background-color: #0f1f5f;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +14,9 @@ body {
   margin: 0;
   font-family: "Inria Sans", sans-serif;
   background-color: #1E3799;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 header {
@@ -28,7 +32,8 @@ header .logo {
   padding-left: 1em;
 }
 header .menu {
-  flex: 1.4;
+  display: flex;
+  flex: 1.5;
 }
 header .menu ul {
   display: flex;
@@ -207,6 +212,84 @@ footer .social-medias ul li a .Linkedin {
   }
   body {
     margin: 0;
+  }
+}
+@media (max-width: 1100px) {
+  header .menu {
+    flex: 2;
+  }
+}
+@media (max-width: 900px) {
+  header .menu {
+    flex: 2.5;
+    font-size: 0.9em;
+  }
+  header .logo {
+    height: 70px;
+    width: 50px;
+  }
+  .content #accueil .accueil-left-content .ma-tete {
+    width: 400px;
+  }
+}
+@media (max-width: 800px) {
+  header .menu {
+    font-size: 0.8em;
+  }
+  .content #WAI .text {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+@media (max-width: 700px) {
+  header .menu ul {
+    gap: 1rem;
+  }
+  .content #accueil .accueil-left-content .ma-tete {
+    width: 350px;
+  }
+  .content #accueil .accueil-right-content h1 {
+    font-size: 3em;
+  }
+  .content #accueil .accueil-right-content h2 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 600px) {
+  header .menu {
+    font-size: 0.6em;
+  }
+  header ul {
+    gap: 0.7rem;
+  }
+  .content #accueil .accueil-left-content .ma-tete {
+    width: 300px;
+  }
+  .content #accueil .accueil-right-content h1 {
+    font-size: 2.5em;
+  }
+  .content #accueil .accueil-right-content h2 {
+    font-size: 1em;
+  }
+  .content #WAI .text {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 500px) {
+  header .menu {
+    font-size: 0.5em;
+  }
+  .content #accueil .accueil-left-content .ma-tete {
+    width: 200px;
+  }
+  .content #accueil .accueil-right-content h1 {
+    font-size: 2em;
+  }
+  .content #accueil .accueil-right-content h2 {
+    font-size: 0.8em;
+  }
+  .content #WAI .text {
+    font-size: 1.1em;
   }
 }
 @-webkit-keyframes moveArrow {
