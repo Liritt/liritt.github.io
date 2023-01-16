@@ -136,6 +136,8 @@ header .menu ul li a:hover {
 }
 .content #skills .overlay-text .overlay-closer {
   cursor: pointer;
+  float: right;
+  transform: scale(1.5);
 }
 .content #skills h1 {
   font-size: 2em;

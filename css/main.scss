@@ -152,6 +152,8 @@ header {
 
             .overlay-closer {
                 cursor: pointer;
+                float: right;
+                transform: scale(1.5);
             }
         }
 
