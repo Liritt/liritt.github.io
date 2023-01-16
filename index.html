@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Kanit:ital,wght@1,300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script async src="./js/main.js"></script>
 </head>
 <body>
     <header>
@@ -32,7 +34,6 @@
             </ul>
         </nav>
     </header>
-
     <main class="content">
         <section id="accueil">
             <div class="accueil-left-content">
@@ -80,75 +81,130 @@
             </div>
 
             <div class="skills-list">
-                <details>
-                    <summary>HTML & CSS</summary>
-                    <p>L’HTML et le CSS sont deux langages que j’ai toujours beaucoup utilisés :  
-                        ce sont les premiers langages dans lesquels j’ai codé. Je me suis formé 
-                        sur le site OpenClassroom. Suffisamment à l’aise désormais, j’utilise plutôt 
-                        les documentations officielles lorsque j’ai un problème sur mon code.</p>
-                    <p>Je pense que ce sont les deux langages que je comprends le mieux car ce sont 
-                        ceux que j’utilise depuis mes débuts. Ils m’ont servi à faire des sites très 
-                        simples comme le design d’un site de fast-food ou encore le CSS d’une application 
-                        web servant à générer des quiz (sur commande)</p>
-                </details>
+                <div class="first-line-skills">
+                    <div class="losange">
+                        <div class="rond">
+                            <img src="img/logo-html5-css3.png" alt="html css logo">
+                        </div>                    
+                    </div>
+                    <div id="overlay-1" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 2;">
+                        <div class="overlay-text">
+                            <span class="material-symbols-outlined overlay-closer">
+                                close
+                            </span>
+                            <p>L’HTML et le CSS sont deux langages que j’ai toujours beaucoup utilisés :  
+                                ce sont les premiers langages dans lesquels j’ai codé. Je me suis formé 
+                                sur le site OpenClassroom. Suffisamment à l’aise désormais, j’utilise plutôt 
+                                les documentations officielles lorsque j’ai un problème sur mon code.</p>
+                            <p>Je pense que ce sont les deux langages que je comprends le mieux car ce sont 
+                                ceux que j’utilise depuis mes débuts. Ils m’ont servi à faire des sites très 
+                                simples comme le design d’un site de fast-food ou encore le CSS d’une application 
+                                web servant à générer des quiz (sur commande)</p>
+                        </div>
+                    </div>            
 
-                <details>
-                    <summary>PHP</summary>
-                    <p>Le php est un langage que j’ai appris à l’IUT ces deux dernières années.
-                        On peut noter par exemple l’application web
-                        que nous avions fait en fin d’année dernière.</p>
-                    <p>De plus, j’ai appris à utiliser certains logiciels
-                        liés à PHP comme PhpStorm ou Composer notamment.</p>
-                    <p>J’ai aussi appris à utiliser des frameworks :</p>
-                    <ul>
-                        <li>Codeception pour ses tests unitaires</li>
-                        <li>Symfony</li> 
-                    </ul>
-                </details>
+                    <div class="losange">
+                        <div class="rond">
+                            <img src="img/PHP-logo.svg" alt="php logo">
+                        </div>                    
+                    </div>
+                    <div id="overlay-2" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 2;">
+                        <div class="overlay-text">
+                            <span class="material-symbols-outlined overlay-closer">
+                                close
+                            </span>
+                            <p>Le php est un langage que j’ai appris à l’IUT ces deux dernières années.
+                                On peut noter par exemple l’application web
+                                que nous avions fait en fin d’année dernière.</p>
+                            <p>De plus, j’ai appris à utiliser certains logiciels
+                                liés à PHP comme PhpStorm ou Composer notamment.</p>
+                            <p>J’ai aussi appris à utiliser des frameworks :</p>
+                            <ul>
+                                <li>Codeception pour ses tests unitaires</li>
+                                <li>Symfony</li> 
+                            </ul>
+                        </div>
+                    </div>            
 
-                <details>
-                    <summary>SQL</summary>
-                    <p>Je suis à l’aise dans la conception, la gestion et l’implémentation des bases de données. </p>
-                    <p>Tout d’abord, j’ai appris et utilisé SQL et SQLPLUS ainsi que
-                        MySQL. J’ai travaillé sur le logiciel Oracle Database
-                        principalement afin d’écrire du SQL. J’ai aussi utilisé
-                        Access afin de créer des formulaires et gérer mes
-                        enregistrements.
-                    </p>
-                    <p>
-                        Enfin, j’ai eu à faire des projets avec création de MLD puis de MCD 
-                        et MPD avec le logiciel powerAMC afin de convertir tout cela en SQL et manipuler mes résultats. 
-                    </p>
-                </details>
+                    <div class="losange">
+                        <div class="rond">
+                            <img src="img/sql-logo.png" alt="sql logo">
+                        </div>                    
+                    </div>
+                    <div id="overlay-3" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 2;">
+                        <div class="overlay-text">
+                            <span class="material-symbols-outlined overlay-closer">
+                                close
+                            </span>
+                            <p>Je suis à l’aise dans la conception, la gestion et l’implémentation des bases de données. </p>
+                            <p>Tout d’abord, j’ai appris et utilisé SQL et SQLPLUS ainsi que
+                                MySQL. J’ai travaillé sur le logiciel Oracle Database
+                                principalement afin d’écrire du SQL. J’ai aussi utilisé
+                                Access afin de créer des formulaires et gérer mes
+                                enregistrements.
+                            </p>
+                            <p>
+                                Enfin, j’ai eu à faire des projets avec création de MLD puis de MCD 
+                                et MPD avec le logiciel powerAMC afin de convertir tout cela en SQL et manipuler mes résultats. 
+                            </p>
+                        </div>
+                    </div>            
+                </div>
+                <div class="second-line-skills">
+                    <div class="losange">
+                        <div class="rond">
+                            <img src="img/logo-python.ong.png" alt="python logo">
+                        </div>                    
+                    </div>
+                    <div id="overlay-4" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 2;">
+                        <div class="overlay-text">
+                            <span class="material-symbols-outlined overlay-closer">
+                                close
+                            </span>
+                            <p>Python est un langage qu’on nous apprend en 
+                                mathématiques dès le collège. Par conséquent,
+                                c’est un langage que je connais depuis 10 ans.</p>
+                            <p>Toutefois, je l’utilise pleinement depuis le début
+                                de mes études à l’université. Dans le
+                               cadre de mes études, j’ai notamment eu 
+                               à faire un jeu de bataille navale,
+                               ainsi que des labyrinthes.</p>
+                        </div>
+                    </div>            
 
-                <details>
-                    <summary>Python</summary>
-                    <p>Python est un langage qu’on nous apprend en 
-                        mathématiques dès le collège. Par conséquent,
-                        c’est un langage que je connais depuis 10 ans.</p>
-                    <p>Toutefois, je l’utilise pleinement depuis le début
-                        de mes études à l’université. Dans le
-                       cadre de mes études, j’ai notamment eu 
-                       à faire un jeu de bataille navale,
-                       ainsi que des labyrinthes </p>
-                </details>
+                    <div class="losange">
+                        <div class="rond">
+                            <img src="img/c.svg" alt="csharp logo">
+                        </div>                    
+                    </div>
+                    <div id="overlay-5" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 2;">
+                        <div class="overlay-text">
+                            <span class="material-symbols-outlined overlay-closer">
+                                close
+                            </span>
+                            <p>Dès 2019, j’ai suivi la formation Gamecodeur qui m’a permis d’expérimenter le langage C#.</p>
+                            <p>J’approfondis mes connaissances actuellement grâce à mes cours de .net et de C#. J'ai notamment recréé le projet de bataille navale fait auparavant en Python ainsi que fait un jeu de carte.</p>
+                        </div>
+                    </div>            
 
-                <details>
-                    <summary>C#</summary>
-                    <p>Dès 2019, j’ai suivi la formation Gamecodeur qui m’a permis d’expérimenter le langage C#.</p>
-                    <p>J’approfondis mes connaissances actuellement grâce à mes cours de .net et de C#.</p>
-                    <p>Coming soon...</p>
-                </details>
+                    <div class="losange">
+                        <div class="rond">
+                            <img src="img/JavaScript-logo.png" alt="Javascript logo">
+                        </div>                    
+                    </div>
+                    <div id="overlay-6" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 2;">
+                        <div class="overlay-text">
+                            <span class="material-symbols-outlined overlay-closer">
+                                close
+                            </span>
+                            <p>Pendant mes cours, j'ai appris les bases de Javascript et surtout ai appris à utiliser des API avec ce langage. 
+                                J'ai aussi utilisé Javascript dans mon projet symfony afin de pouvoir créer un Drag and Drop à l'aide de drag and drop API.</p>
+                        </div>
+                    </div>
 
-                <details>
-                    <summary>Javascript</summary>
-                    <p>Des cours de Javascript sont prévus cette année. 
-                        Mon niveau sera plus élevé à mon entrée en stage </p>
-                    <p>Coming soon...</p>
-                </details>
+                </div>
             </div>
         </section>
-
         <section id="contact">
             <h1>
                 Contact:
@@ -161,7 +217,7 @@
     </main>
 
     <footer>
-        <p><em>Site créé avec HTML et SCSS</em></p>
+        <p><em>Site créé avec HTML, SCSS et Javascript</em></p>
         
         <div class="social-medias">
             <p>Me retrouver sur les réseaux :</p>
