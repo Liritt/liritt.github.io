@@ -175,6 +175,7 @@ header .menu ul li a:hover {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  cursor: pointer;
 }
 .content #skills .skills-list .losange .rond img {
   max-width: 100%;
