@@ -5,12 +5,8 @@ let overlay;
 let pos;
 ronds.forEach((rond) => {
     rond.addEventListener("click", (e) => {
-        console.log("Salut", rond);
-        e.preventDefault();
         pos = ronds.indexOf(rond) + 1;
-        console.log(pos);
         overlay = document.getElementById(`overlay-${pos}`);
-        console.log(overlay);
         overlay.style.display = "block";
         html.style.overflow = "hidden";
     });
