@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Lemont Gaétan">
     <title>Gaétan Lemont</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +39,7 @@
     <main class="content">
         <section id="accueil">
             <div class="accueil-left-content">
-                <img class="ma-tete" src="img/ma_tete.png" alt="Ma photo">
+                <img class="ma-tete" src="img/ma-tete.jpg" alt="Ma photo">
             </div>
             <div class="accueil-right-content">
                 <h1>Gaétan <br> Lemont</h1>
@@ -56,22 +57,68 @@
         <section id="WAI">
             <h1>Qui suis-je ?</h1>
             <div class="text">
-                <h2>Mon histoire</h2>
+                <h2>Présentation</h2>
                 <p>
-                    J’ai commencé à m’intéresser à l’informatique vers mes 10 ans grâce au jeu Minecraft. 
-                    Depuis lors, j’ai cherché ce  qui me correspondrait le plus en matière de réalisation 
-                    informatique et c’est ainsi que j’ai décidé de devenir développeur web.  A partir de là, 
-                    je me suis concentré sur les langages du web ainsi que sur le fonctionnement de tout ce qui tourne autour.  
-                    J’apprends et je me perfectionne dans  les langages et les outils  en autonomie et grâce à mes études.
+                    Salut ! Moi c'est Gaétan, étudiant en 2ème année en B.U.T Informatique à l'IUT de Reims. 
+                    Je suis quelqu'un qui aime le développement web, les manwhas, <s>les mathématiques</s> et le sport ! (surtout le tennis :D) 
                 </p>
-                <h2>Le tennis</h2>
+                <h2>Objectifs</h2>
                 <p>
-                    Le tennis tient une place importante dans ma vie. Je m’entraîne au minimum 1h30 par semaine. 
-                    J’aime me dépasser et j’ai l’esprit de compétition : ce sport me correspond donc. Je retrouve 
-                    ces mêmes valeurs de dépassement de soi et de challenge dans le codage : chaque nouveau projet 
-                    est un défi à relever dans lequel je vais utiliser les outils adéquats et si je n’ai pas les 
-                    connaissances suffisantes, je vais me former et m’entrainer jusqu’à rédiger le code idéal.
+                    Plus tard, je voudrais d'abord devenir développeur back-end puis enfin devenir fullstack. 
+                    Pourquoi me diriez-vous ? C'est parce que je suis quelqu'un qui aime se créer des projets basé sur les connaissances que j'ai acquises auparavant. 
+                    Être fullstack serait le moyen d'avoir plus de libertés dans mes choix de projets, me permettant d'aller plus loin dans mes idées et, qui sais, peut-être qu'un jour je créerais mon propre framework !
                 </p>
+                <h2>Projets réalisés</h2>
+                <ul class="projects">
+                    <li>                    
+                        <div class="card">
+                            <div class="card-header">
+                                Création du serveur minecraft "SaberFight"
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-text">8 mois de travail, 700 membres sur le discord du serveur ainsi que 150 utilisateurs pendant l'ouverture, 
+                                    ce projet fut le plus gros et le plus complet réalisé dans ma vie. 
+                                    Je me chargeais de l'organisation, de la répartition du travail, de la stratégie de publicité ainsi que de la supervision des équipes.
+                                    Une attaque DDOS aura raison de ce projet mais pendant quelques heures, 
+                                    des débutants sans nom ont créé un projet dont la popularité rivalisait les plus grands.
+                                </h5>
+                            </div>
+                            <iframe src="https://www.youtube.com/embed/KBpBrX97uLc" title="YouTube video player" frameborder="-1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header">
+                                Création d'un site web pour la formation Master IA de l'IUT de Reims
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-text">Mêlant travail en collaboration avec git, 
+                                    échanges avec un vrai client et création du projet de A à Z, 
+                                    passant par l'analyse et finissant par une présentation orale du projet devant les clients, 
+                                    il s'agit de mon premier réel projet dans le monde professionnel. 
+                                    Ce site fut réalisé avec Symfony.<br>
+                                    <small>Cliquez sur l'image pour être emmené sur le dépôt github du projet</small>
+                                </h5>
+                            </div>
+                            <a href="https://github.com/Liritt/Site-web-master-IA" target="_blank"><img src="img/logo-master-ia.png" class="card-img" alt="logo-master-ia"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <div class="card-header">
+                                [En cours de développement] Création d'un site web qui récupère les chapitres de manwhas sur des sites spécifiques automatiquement
+                            </div>
+                            <div class="card-body">
+                                <h5>Pour cela, je dois d'abord scraper les données puis utiliser celle-ci pour créer mon site. 
+                                    Pour le moment, je pense utiliser le framework Javascript Puppeteer (j'utiliserais typescript), une base de donnée MariaDB, 
+                                    React pour le site et pourquoi pas créer une API avec API Platform de Symfony.<br>
+                                    <small>Cliquez sur l'image pour être emmené sur le dépôt github du projet</small>
+                                </h5>
+                            </div>
+                            <a href="https://github.com/Liritt/manwha-scrapping" target="_blank"><img src="img/scraping-icon.jpg" class="card-img" alt="logo-master-ia"></a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 

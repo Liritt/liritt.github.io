@@ -78,7 +78,6 @@ header .menu ul li a:hover {
   border-right-color: white;
   width: 500px;
   border-bottom-right-radius: 70%;
-  background-image: url(/img/image-fond-ma-tete.jpg);
 }
 .content #accueil .accueil-right-content {
   flex: 1.5;
@@ -117,27 +116,42 @@ header .menu ul li a:hover {
   color: #6A89CC;
   background-color: #fff;
 }
-.content #WAI {
-  color: white;
-}
 .content #WAI h1 {
   font-size: 2.2em;
   padding-left: 0.2em;
+  color: white;
 }
 .content #WAI .text {
-  text-align: center;
-  padding-left: 25%;
-  padding-right: 25%;
+  margin-top: 3rem;
   font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.content #WAI .text h2, .content #WAI .text > p {
+  color: white;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 .content #WAI .text h2 {
   font-size: 1.3em;
+}
+.content #WAI .text .projects {
+  padding-top: 2rem;
+  color: black;
+  display: flex;
+  gap: 15px;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.content #WAI .text .projects > * {
+  width: 20rem;
 }
 .content #skills {
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 .content #skills .overlay-text {
   position: absolute;
@@ -365,18 +379,18 @@ footer .social-medias ul li a .Linkedin {
 }
 @-webkit-keyframes moveArrow {
   from {
-    transform: translateY(-15px);
+    transform: translateY(-20px);
   }
   to {
-    transform: translateY(5px);
+    transform: translateY(0px);
   }
 }
 @keyframes moveArrow {
   from {
-    transform: translateY(-15px);
+    transform: translateY(-20px);
   }
   to {
-    transform: translateY(5px);
+    transform: translateY(0px);
   }
 }
 @-webkit-keyframes appear {
